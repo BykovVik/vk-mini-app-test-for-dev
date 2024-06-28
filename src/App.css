@@ -100,10 +100,14 @@ button {
     font-family: 'Curs';
     cursor: pointer;
 }
-.link_text:hover {
+.link_text:hover, .link_text:focus, .link_text:active {
     color: #b3842f;
 }
-
+@media (hover: none) {
+    .link_text:hover {
+        color: white; 
+    }
+}
 @media (min-width: 320px) { 
     .title_text {
         font-size: 40px;
